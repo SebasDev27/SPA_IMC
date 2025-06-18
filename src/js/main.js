@@ -1,6 +1,18 @@
-altura = prompt('ingresa tu estatura')
-peso = prompt ('ingresa tu peso')
+let peso
+let altura
+let imc
 
-imc = 0.3 * peso + 0.2 * altura * 100;
+/*peso = prompt("ingresa tu peso(kg)")
+altura = prompt("ingrese tu altura(metros)")*/
 
-console.log('tu masa muscular es ' + imc)
+imc = peso / (altura*altura)
+
+if (imc < 18.5) {
+    console.log("estas delgado")
+}else if (imc > 19 && imc < 24.9) {
+    console.log("estas en un peso ideal")
+}else if (imc > 25.0 && imc < 29.9){
+    console.log("tienes sobre peso")
+}else if (imc >30) {
+    console.log("tienes obesidad")
+}
