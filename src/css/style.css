@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #31e9c7, #343e6e);
+    background: black;
 }
 
 
@@ -18,7 +18,7 @@ body {
     background: white;
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 8px rgb(139, 139, 139);
     max-width: 400px;
     width: 100%;
 }
@@ -26,6 +26,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 1rem;
+    text-shadow: 3px 3px rgb(194, 191, 191);
 }
 
 label {
@@ -52,14 +53,16 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: 5px 5px #095fb6;
 }
 
 button:hover {
     background-color: #003366;
 }
 
-.result {
-    margin-top: 1rem;
+.resultado {
+    margin-top: 3rem;
+    margin: 10px;
     text-align: center;
     font-size: 1.2rem;
 }
