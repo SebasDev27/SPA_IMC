@@ -9,7 +9,7 @@
     <meta name="organization" content="SebasDev27">
     <meta name="author" content="Sebastian Marriaga Hoyos">
     <meta name="designer" content="Sebastian Marriaga Hoyos">
-    <meta name="copyright" content="© 2025 jcomte23. All rights reserved">
+    <meta name="copyright" content="© 2025 SebasDev27. All rights reserved">
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="15days">
@@ -18,22 +18,19 @@
     <title>IMC</title>
 </head>
 <body>
-    <header>
+<main class="container">
         <h1>Calcula Tu IMC</h1>
-    </header>
-    <main>
-        <section>
-            <form action="calcular">
-                <label for="peso">peso (kg)</label>
-                <input type="text" id="peso" name="peso" placeholder="ej: 70">
 
-                <label for="altura">altura (m)</label>
-                <input type="text" id="altura" name="altura" placeholder="ej: 1.60">
-                <button type="submit">calcular</button>
-            </form>
-        </section>
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" placeholder="Ej: 70" min="0">
+
+        <label for="altura">Altura (m):</label>
+        <input type="number" id="altura" placeholder="Ej: 1.75" min="0">
+
+        <button id="boton" >Calcular IMC</button>
+
+        <section class="resultado" id="resultado"></section>
     </main>
-    <footer></footer>
 
     <script src="/src/js/main.js"></script>
 </body>

@@ -1,18 +1,24 @@
-let peso
-let altura
-let imc
+const peso= document.getElementById('peso')
+const altura= document.getElementById('altura')
+const boton= document.getElementById('boton')
+const resultado = document.getElementById('resultado')
 
-/*peso = prompt("ingresa tu peso(kg)")
-altura = prompt("ingrese tu altura(metros)")*/
 
-imc = peso / (altura*altura)
+boton.addEventListener('click', function () {
 
-if (imc < 18.5) {
-    console.log("estas delgado")
-}else if (imc > 19 && imc < 24.9) {
-    console.log("estas en un peso ideal")
-}else if (imc > 25.0 && imc < 29.9){
-    console.log("tienes sobre peso")
-}else if (imc >30) {
-    console.log("tienes obesidad")
-}
+    const imc = peso.value / (altura.value * altura.value)
+
+    let message
+
+    if (imc < 18.5) {
+        message = 'Bajo peso';
+    } else if (imc < 24.9) {
+        message = 'Peso normal';
+    } else if (imc < 29.9) {
+        message = 'Sobrepeso';
+    } else {
+        message = 'Obesidad';
+    }
+
+    resultado.textContent="tu tienes un imc de "+ Math.round(imc) +" por lo tanto esta en: "+ message
+})
